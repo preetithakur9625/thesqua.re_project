@@ -140,6 +140,17 @@ h4.margin-top {
     vertical-align: middle;
     background-color: #e4dcd9;
   }
+  .dotted::before{
+    display: inline-block;
+    margin: 0 7px 0 0;
+    content: "";
+    height: 1px;
+    width: 1px;
+    padding: 1px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #00000050;
+  }
   .disco{
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -188,6 +199,31 @@ a.btn.btn-default.buy-text {
     font-size: 14px;
     font-style: italic;
 }
+ul.ul-list {
+    margin-right: 30px;
+}
+@media (min-width:1024px) and (max-width:1200px) {
+    .dotted::before{
+        display: inline-block;
+        margin: 0 4px 0 0;
+      }
+      ul.ul-list {
+        margin-right: 15px;
+    }
+    .album-year::before {
+        display: inline-block;
+        margin: 0px 0.5rem 0.2rem 0;
+    }
+    .album-year {
+        font-size: 16px;
+    }
+    .album-name {
+        font-size: 14px;
+    }
+    a.btn.btn-default.listen-text {
+        padding: 5px 8px;
+    }
+}
 @media (min-width:768px) and (max-width:1024px) {
     .banner {
         height: auto;
@@ -207,6 +243,10 @@ a.btn.btn-default.buy-text {
     .sheardText, .curtText{
         font-size: 3rem;
     }
+    ul.ul-list {
+        margin-right: 10px;
+    }
+
 }
 
 @media (max-width:767px) and (min-width:300px) {
@@ -248,4 +288,11 @@ a.btn.btn-default.buy-text {
     .album-year {
         font-size: 15px;
     }
+    ul.ul-list {
+        margin-right: 10px;
+    }
+    .dotted::before{
+        display: inline-block;
+        margin: 0 4px 0 0;
+      }
 }
